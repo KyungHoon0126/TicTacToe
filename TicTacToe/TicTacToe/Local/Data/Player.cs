@@ -3,7 +3,7 @@
     public enum Player
     {
         None, 
-        Plyaer1,
+        Player1,
         Player2
     }
 }

@@ -5,7 +5,7 @@ namespace TicTacToe.Local.Data
 {
     public class SquareItem : ObservableObject
     {
-        public ICommand ChoiceCommand {  get; set; }
+        public ICommand ChoiceCommand { get; set; }
         
         private Player _player;
         public Player Player
