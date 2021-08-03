@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TicTacToe.Local.Mvvm;
 
 namespace TicTacToe.Local.Data
@@ -13,7 +9,7 @@ namespace TicTacToe.Local.Data
     {
         private string _playerName;
         private bool _isTurn;
-        private int _wintCount;
+        private int _winCount;
         private ObservableCollection<string> _result;
 
         public string PlayerName
@@ -26,12 +22,12 @@ namespace TicTacToe.Local.Data
             }
         }
 
-        public int Wincount
+        public int WinCount
         {
-            get => _wintCount;
+            get => _winCount;
             set
             {
-                _wintCount = value;
+                _winCount = value;
                 OnPropertyChanged();
             }
         }
@@ -63,9 +59,9 @@ namespace TicTacToe.Local.Data
             Result.CollectionChanged += Result_CollectionChanged;
         }
 
-        private void Result_CollectionChanged(object? sender, NotifyCollectionChangedEventArgs e)
+        private void Result_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
-            Wincount = Result.Where(x => x.Equals("W")).Count();
+            WinCount = Result.Where(x => x.Equals("W")).Count();
         }
 
         internal void SwitchTurn()

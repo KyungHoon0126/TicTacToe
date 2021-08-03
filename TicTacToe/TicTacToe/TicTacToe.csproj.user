@@ -5,7 +5,16 @@
     <Page Update="Themes\Controls\GameBoard.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Controls\GameBoardItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Controls\GameView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Controls\ScoreBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Controls\ScoreBoxItem.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\Generic.xaml">

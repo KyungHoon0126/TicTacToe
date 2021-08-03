@@ -73,7 +73,7 @@ namespace TicTacToe.Local.ViewModel
         #region SetPlayers
         private void SetPlayers()
         {
-            Player1 = new("KyungHoon");
+            Player1 = new("Hoon");
             Player2 = new("Jimin");
         }
         #endregion
@@ -133,7 +133,7 @@ namespace TicTacToe.Local.ViewModel
             else
             {
                 Player1.Result.Add(player == Player.Player1 ? "W" : "L");
-                Player2.Result.Add(player == Player.Player1 ? "W" : "L");
+                Player2.Result.Add(player == Player.Player2 ? "W" : "L");
             }
 
             SetSquares();
