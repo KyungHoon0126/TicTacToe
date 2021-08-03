@@ -3,5 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/Themes/Controls/GameView.xaml"/>
+        <ResourceDictionary Source="/Themes/Controls/GameBoard.xaml"/>
+        <ResourceDictionary Source="/Themes/Controls/PlayerCard.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

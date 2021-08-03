@@ -68,7 +68,8 @@
                             </Border>
 
                             <UniformGrid Grid.Row="1" Columns="2">
-
+                                <units:PlayerCard DataContext="{Binding Player1}"/>
+                                <units:PlayerCard DataContext="{Binding Player2}"/>
                             </UniformGrid>
 
                             <UniformGrid Grid.Row="2" Columns="2">
